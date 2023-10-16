@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/booklist', function () {
+    $books = \App\Models\Books::all(); // Assuming you have a Book model
+    return view('show', ['books' => $books]);
+})->name('booklist');
+
+Route::get('/edit', function () {
+    return view('edit');
+})->name('edit');
+Route::get('/create', function () {
+    return view('create');
+})->name('create');
+Route::get('/delete', function () {
+    return view('delete');
+})->name('delete');
+Route::resource('books', 'BooksController');

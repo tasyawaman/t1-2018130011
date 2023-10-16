@@ -1,44 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <div class="container">
-        <h1>Welcome to the Book Management System</h1>
-
-        <p>This is a simple book management application where you can:</p>
-
-        <ul>
-            <li>View a list of books in the </li>
-            <li>Add a new book to the database in the section.</li>
-            <li>View, edit, or delete individual books in the .</li>
-        </ul>
-
-        <p>Feel free to get started and manage your book collection!</p>
-    </div> --}}
-    <div class="container">
-        <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container d-flex align-items-center">
-                        <a class="blog-header-logo text-dark" href="#" style="font-size: 2rem;">Book Management
-                            System</a>
-                    </div>
-                </nav>
-
-            </div>
-        </header>
-
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-secondary" href="#">Book List</a>
-                <a class="p-2 link-secondary" href="#">Add a book</a>
-                <a class="p-2 link-secondary" href="#">Delete a book</a>
-                <a class="p-2 link-secondary" href="#">Update a book</a>
-
-            </nav>
-        </div>
-    </div>
-
     <main class="container">
         <div class="row">
             <div class="col-md-6 px-0">
